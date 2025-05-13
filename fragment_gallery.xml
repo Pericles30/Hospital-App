@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for the Page -->
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Different Types of Rooms"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Repeat this block for each room type -->
+
+        <!-- Room Type 1 -->
+        <ImageView
+            android:id="@+id/room_image_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img5"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/room_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard Room"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Room Type 2 -->
+        <ImageView
+            android:id="@+id/room_image_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/room_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard Plus Room"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Room Type 3 -->
+        <ImageView
+            android:id="@+id/room_image_3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_2"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/room_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luxury Room"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Room Type 4 -->
+        <ImageView
+            android:id="@+id/room_image_4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_3"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/room_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suite Room"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Room Type 5 -->
+        <ImageView
+            android:id="@+id/room_image_5"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_4"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/room_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presidential Suite"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonCheckOrBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Availability / Book Bed"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>

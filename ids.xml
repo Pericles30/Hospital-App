@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_username" type="id" />
+    <item name="nav_logout" type="id" />
+    <item name="emergencyServiceTitle" type="id" />
+    <item name="emergencyServiceDescription" type="id" />
+    <item name="icuServiceTitle" type="id" />
+    <item name="icuServiceDescription" type="id" />
+    <item name="generalSurgeryTitle" type="id" />
+    <item name="generalSurgeryDescription" type="id" />
+    <item name="maternityServiceTitle" type="id" />
+    <item name="maternityServiceDescription" type="id" />
+    <item name="bookServiceButton" type="id" />
+    <item name="nav_slideshow" type="id" />
+</resources>

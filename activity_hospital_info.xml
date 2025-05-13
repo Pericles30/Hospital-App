@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Hospital_Info">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Hospital Title -->
+        <TextView
+            android:id="@+id/hospitalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CareCure Hospital"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Hospital Description -->
+        <TextView
+            android:id="@+id/hospitalDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We offer world-class medical care with state-of-the-art facilities, providing compassionate care to all patients."
+            android:textSize="18sp"
+            android:textColor="@color/dark_gray"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Hospital Mission -->
+        <TextView
+            android:id="@+id/missionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Mission"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/missionDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our mission is to improve the health and well-being of the community by delivering quality healthcare with innovation and expertise."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Hospital Facilities -->
+        <TextView
+            android:id="@+id/facilitiesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facilities"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/facilitiesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 24/7 Emergency Care\n• Advanced Surgery Center\n• Fully Equipped ICU\n• Modern Diagnostic Lab\n• Outpatient Services\n• Maternity and Child Care\n• Pharmacy\n• Rehabilitation Services"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Medical Team Info -->
+        <TextView
+            android:id="@+id/medicalTeamTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Medical Team"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/medicalTeamList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Dr. John Smith (Chief Surgeon)\n• Dr. Sarah Lee (Pediatrician)\n• Dr. Michael Brown (Cardiologist)\n• Dr. Emma Wilson (Neurologist)\n• Dr. Linda Taylor (Orthopedic)\n• Dr. Alan Walker (Radiologist)"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Hospital Contact Info -->
+        <TextView
+            android:id="@+id/contactInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/contactInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Phone: +1-800-123-4567\n• Email: info@carecurehospital.com\n• Address: 1234 Health St, Wellness City"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Go Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:text="Go Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:elevation="4dp"
+            android:onClick="goBack"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

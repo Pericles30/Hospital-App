@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?android:attr/colorBackground">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Your Bed"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name" />
+
+        <!-- Phone Number Input -->
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Bed Type Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Bed Type:"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupBedType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSingleBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard Bed" />
+
+            <RadioButton
+                android:id="@+id/radioDoubleBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard Plus" />
+
+            <RadioButton
+                android:id="@+id/radioICUBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luxury Bed" />
+
+            <RadioButton
+                android:id="@+id/radioPrivateSuite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suite" />
+
+            <RadioButton
+                android:id="@+id/radioDeluxeRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presidential Suite" />
+        </RadioGroup>
+
+        <!-- Facilities Checkbox -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Facilities:"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fi" />
+
+        <CheckBox
+            android:id="@+id/checkboxMealService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meal Service" />
+
+        <CheckBox
+            android:id="@+id/checkboxNurse24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/7 Nurse Assistance" />
+
+        <!-- Number of Days Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Number of Days:"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/days_array" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Booking"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Display Booking Details -->
+        <TextView
+            android:id="@+id/textViewBookingDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
